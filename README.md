@@ -1,6 +1,6 @@
 # Detection of Online Sexism
 
-This repository contains the implementation of an explainable system for detecting online sexism. We define the task into two subtasks: Task A for binary sexism detection and Task B for categorizing sexist content.
+This repository contains the implementation of an explainable system for detecting online sexism. The task is defined into two subtasks: Task A for binary sexism detection and Task B for categorizing sexist content.
 
 ## Introduction
 
@@ -47,8 +47,8 @@ The data was split into training and testing sets using an 80-20 ratio, with tok
 
 We built a neural network model using Keras for both tasks. The architecture is as follows:
 
-- **Input layer:** Dense layer with 128 units and ReLU activation function.
-- **Dropout layer:** Dropout rate of 0.7 to prevent overfitting.
+- **Input layer:** Dense layer with 256 units and ReLU activation function.
+- **Dropout layer:** Dropout rate of 0.65 to prevent overfitting.
 - **Output layer for Task A:** Dense layer with 1 unit and sigmoid activation function.
 - **Output layer for Task B:** Dense layer with 4 units and softmax activation function.
 
@@ -60,19 +60,19 @@ We experimented with various hyperparameters, such as the number of units in the
 
 ### Task A: Binary Sexism Detection
 
-- **Epochs:** 70
-- **Batch Size:** 70
-- **Training Accuracy:** 95.73%
-- **Testing Accuracy:** 79.43%
-- **F1 Score:** 76.42%
+- **Epochs:** 60
+- **Batch Size:** 40
+- **Training Accuracy:** 98.75%
+- **Testing Accuracy:** 79.39%
+- **F1 Score:** 77.06%
 
 ### Task B: Categorizing Sexist Content
 
-- **Epochs:** 70
-- **Batch Size:** 70
-- **Training Accuracy:** 87.91%
-- **Testing Accuracy:** 46.12%
-- **F1 Score:** 41.44%
+- **Epochs:** 60
+- **Batch Size:** 40
+- **Training Accuracy:** 94.85%
+- **Testing Accuracy:** 45.59%
+- **F1 Score:** 43.97%
 
 ## Technology Used
 
@@ -95,10 +95,3 @@ We experimented with various hyperparameters, such as the number of units in the
 
 - **Visualization:**
   - `matplotlib`
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/online-sexism-detection.git
-   cd online-sexism-detection
