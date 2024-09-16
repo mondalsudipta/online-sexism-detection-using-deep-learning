@@ -1,6 +1,3 @@
-# online-sexism-detection-using-deep-learning
-
-
 # Detection of Online Sexism
 
 This repository contains the implementation of an explainable system for detecting online sexism. We define the task into two subtasks: Task A for binary sexism detection and Task B for categorizing sexist content.
