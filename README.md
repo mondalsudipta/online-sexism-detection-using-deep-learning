@@ -1,6 +1,6 @@
 # Detection of Online Sexism
 
-This repository contains the implementation of an explainable system for detecting online sexism. The task is defined into two subtasks: Task A for binary sexism detection and Task B for categorizing sexist content.
+This repository contains the implementation of an online sexism detection project. The task is defined into two subtasks: Task A for binary sexism detection and Task B for categorizing sexist content.
 
 ## Introduction
 
